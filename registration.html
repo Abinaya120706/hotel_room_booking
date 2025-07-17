@@ -1,0 +1,83 @@
+<!-- registration.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guest Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fefae0;
+      padding: 20px;
+    }
+    .card {
+      max-width: 450px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #7f4f24;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #7f4f24;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+    }
+    .link {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .link a {
+      color: #7f4f24;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Guest Registration</h2>
+    <form>
+      <label>Name:</label>
+      <input type="text" required>
+
+      <label>Phone Number:</label>
+      <input type="text" required>
+
+      <label>Email:</label>
+      <input type="email" required>
+
+      <label>City:</label>
+      <input type="text" required>
+
+      <button type="submit">Register</button>
+
+      <div class="link">
+        <p>Already registered? <a href="./booking.html">Book a Room</a></p>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
