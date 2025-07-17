@@ -1,0 +1,120 @@
+<!-- booking.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Room Booking</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff5e6;
+      padding: 20px;
+    }
+    .card {
+      max-width: 550px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .image-container img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #5a3d1e;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    select, input[type="text"], input[type="number"], input[type="date"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      width: 48%;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .submit-btn {
+      background-color: #5a3d1e;
+      color: white;
+    }
+    .reset-btn {
+      background-color: #ccc;
+    }
+    .link {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .link a {
+      color: #5a3d1e;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- Hotel image -->
+    <div class="image-container">
+      <img src="./hotel.jpg" alt="Hotel Room Image">
+    </div>
+
+    <h2>Hotel Room Booking</h2>
+    <form>
+      <label>Check-in Date:</label>
+      <input type="date" required>
+
+      <label>Check-out Date:</label>
+      <input type="date" required>
+
+      <label>Room Type:</label>
+      <select required>
+        <option value="">-- Select Room --</option>
+        <option>Single Room</option>
+        <option>Double Room</option>
+        <option>Suite</option>
+      </select>
+
+      <label>Number of Rooms:</label>
+      <input type="number" min="1" max="10" required>
+
+      <label>Payment Method:</label>
+      <select required>
+        <option value="">-- Choose Payment --</option>
+        <option>Cash</option>
+        <option>UPI</option>
+        <option>Credit/Debit Card</option>
+      </select>
+
+      <div class="buttons">
+        <button type="submit" class="submit-btn">Book Now</button>
+        <button type="reset" class="reset-btn">Reset</button>
+      </div>
+
+      <div class="link">
+        <p>Not registered yet? <a href="./registration.html">Register here</a></p>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
